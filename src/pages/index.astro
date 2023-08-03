@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Tesla Web Clone">
 	<main>
 		<header class="py-3 px-11 flex items-center fixed top-0 w-full justify-between z-40 text-white">
 			<div class="flex flex-grow basis-0">
@@ -30,11 +30,18 @@ import Card from '../components/Card.astro';
 		</header>
 
 		<section class="bg-black h-screen w-screen text-center relative overflow-hidden">
-			<h2>Disfrute de Tesla</h2>
-			<p>Programe una prueba de conduccion hoy mismo</p>
-
-			<a href="#"></a>
-			<div class="absolute top-0 bottom-0">
+			<div class="z-30 relative h-full flex flex-col">
+				<header>
+					<h2 class="text-white font-medium pt-40 text-[45px]">Disfrute de Tesla</h2>
+					<p class="text-white text-md">Programe una prueba de conduccion hoy mismo</p>
+				</header>
+				<footer class="flex flex-col flex-grow justify-end pb-24">
+					<div>
+						<a class="text-white border-[3px] border-white rounded font-medium px-12 py-2 text-sm hover:bg-white hover:text-black transition-colors backdrop-blur-sm bg-white/5" href="#">Prueba de conduccion</a>
+					</div>
+				</footer>
+			</div>
+			<div class="absolute top-0 bottom-0 z-10">
 				<video autoplay muted loop src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/Homepage-Demo-Drive-Desktop-NA.mp4"></video>
 			</div>
 		</section>
