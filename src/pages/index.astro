@@ -1,78 +1,223 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import LandingHeader from '../components/LandingHeader.astro';
-import LandingSection from '../components/LandingSection.astro';
-import ModelYSection from '../components/ModelYSection.astro';
-import Section from '../components/Section.astro';
+import Layout from "../layouts/Layout.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+import LandingSection from "../components/LandingSection.astro";
+import ModelYSection from "../components/ModelYSection.astro";
+import Section from "../components/Section.astro";
 ---
 
 <Layout title="Tesla Web Clone">
-	<LandingHeader />
-	<main class="snap-y snap-mandatory relative w-full h-screen overflow-auto overflow-x-hidden">
-		<div class="snap-center">
-			<Section title="Disfrute de tesla" subtitle="Programe una prueba de conduccion hoy mismo" color="white">
-				<div slot="footer">
-                	<a class="text-white border-[3px] border-white rounded font-medium px-12 py-2 text-sm hover:bg-white hover:text-black transition-colors backdrop-blur-md bg-white/5" href="#">Prueba de conduccion</a>
-            	</div>
-				<video slot="background" autoplay muted loop src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/Homepage-Demo-Drive-Desktop-NA.mp4"></video>
-			</Section>
-		</div>
-		<div class="snap-center">
-			<Section title="Model Y" subtitle="Concertar una prueba de conduccion" color="black">
-				<div slot="footer">
-                	<a class="text-white border-[3px] border-gray-800 rounded font-medium px-12 py-2 text-sm bg-gray-800" href="#">Explorar inventario</a>
+  <LandingHeader />
+  <main
+    class="snap-y snap-mandatory relative w-full h-screen overflow-auto overflow-x-hidden"
+  >
+    <div class="snap-center">
+      <Section
+        title="Disfrute de tesla"
+        subtitle="Programe una prueba de conduccion hoy mismo"
+        color="white"
+      >
+        <div slot="footer">
+          <a
+            class="text-white border-[3px] border-white rounded font-medium px-12 py-2 text-sm hover:bg-white hover:text-black transition-colors backdrop-blur-md bg-white/5"
+            href="#">Prueba de conduccion</a
+          >
+        </div>
+        <div slot="underfooter">
+          <a
+            class="pb-4 text-sm flex flex-col flex-grow justify-end invisible"
+            href="#"
+            >hola
+          </a>
+        </div>
+        <video
+          slot="background"
+          autoplay
+          muted
+          loop
+          src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/Homepage-Demo-Drive-Desktop-NA.mp4"
+        ></video>
+      </Section>
+    </div>
+    <div class="snap-center">
+      <Section
+        title="Model Y"
+        subtitle="Concertar una prueba de conduccion"
+        color="black"
+      >
+        <div slot="footer">
+          <a
+            class="text-white border-[3px] border-gray-800 rounded font-medium px-12 py-2 text-sm bg-gray-800 mr-3 ml-3"
+            href="#">Explorar inventario</a
+          >
 
-                	<a class="text-black border-[3px] border-gray-100 rounded font-medium px-12 py-2 text-sm bg-gray-100" href="#">Pedido personalizado</a>
-            	</div>
-				<img slot="background" alt="Model Y" class="h-full w-screen object-cover object-center bg-image"src="https://digitalassets.tesla.com/tesla-contents/image/upload/h_2400,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-Y-Global-Desktop"></img>
-			</Section>
-		</div>
-		<div class="snap-center">
-			<Section title="Model 3" subtitle="Concertar una prueba de conduccion" color="black">
-				<div slot="footer">
-                	<a class="text-white border-[3px] border-gray-800 rounded font-medium px-12 py-2 text-sm bg-gray-800" href="#">Explorar inventario</a>
+          <a
+            class="text-black border-[3px] border-gray-100 rounded font-medium px-12 py-2 text-sm bg-gray-100 mr-3 ml-3"
+            href="#">Pedido personalizado</a
+          >
+        </div>
+        <div slot="underfooter">
+          <a class="pb-4 text-sm flex flex-col flex-grow justify-end" href="#"
+            ><u>Disponible con Moves III</u></a
+          >
+        </div>
+        <img
+          slot="background"
+          alt="Model Y"
+          class="h-full w-screen object-cover object-center bg-image"
+          src="https://digitalassets.tesla.com/tesla-contents/image/upload/h_2400,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-Y-Global-Desktop"
+        />
+      </Section>
+    </div>
+    <div class="snap-center">
+      <Section
+        title="Model 3"
+        subtitle="Concertar una prueba de conduccion"
+        color="black"
+      >
+        <div slot="footer">
+          <a
+            class="text-white border-[3px] border-gray-800 rounded font-medium px-12 py-2 text-sm bg-gray-800 mr-3 ml-3"
+            href="#">Explorar inventario</a
+          >
 
-                	<a class="text-black border-[3px] border-gray-100 rounded font-medium px-12 py-2 text-sm bg-gray-100" href="#">Pedido personalizado</a>
-            	</div>
-				<img slot="background" alt="Model 3" class="h-full w-screen object-cover object-center bg-image"src="https://digitalassets.tesla.com/tesla-contents/image/upload/h_2560,w_4096,c_fit,f_auto,q_auto:best/Homepage-Model-3-Desktop-LHD"></img>
-			</Section>
-		</div>
-		<div class="snap-center">
-			<Section title="Model S" subtitle="Concertar una prueba de conduccion" color="black">
-				<div slot="footer">
-                	<a class="text-white border-[3px] border-gray-800 rounded font-medium px-12 py-2 text-sm bg-gray-800" href="#">Explorar inventario</a>
+          <a
+            class="text-black border-[3px] border-gray-100 rounded font-medium px-12 py-2 text-sm bg-gray-100 mr-3 ml-3"
+            href="#">Pedido personalizado</a
+          >
+        </div>
+        <div slot="underfooter">
+          <a class="pb-4 text-sm flex flex-col flex-grow justify-end" href="#"
+            ><u>Disponible con Moves III</u></a
+          >
+        </div>
+        <img
+          slot="background"
+          alt="Model 3"
+          class="h-full w-screen object-cover object-center bg-image"
+          src="https://digitalassets.tesla.com/tesla-contents/image/upload/h_2560,w_4096,c_fit,f_auto,q_auto:best/Homepage-Model-3-Desktop-LHD"
+        />
+      </Section>
+    </div>
+    <div class="snap-center">
+      <Section
+        title="Model S"
+        subtitle="Concertar una prueba de conduccion"
+        color="black"
+      >
+        <div slot="footer">
+          <a
+            class="text-white border-[3px] border-gray-800 rounded font-medium px-12 py-2 text-sm bg-gray-800 mr-3 ml-3"
+            href="#">Explorar inventario</a
+          >
 
-                	<a class="text-black border-[3px] border-gray-100 rounded font-medium px-12 py-2 text-sm bg-gray-100" href="#">Pedido personalizado</a>
-            	</div>
-				<img slot="background" alt="Model Y" class="h-full w-screen object-cover object-center bg-image"src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-S-homepage-desktop"></img>
-			</Section>
-		</div>
-		<div class="snap-center">
-			<Section title="Model X" subtitle="Concertar una prueba de conduccion" color="black">
-				<div slot="footer">
-                	<a class="text-white border-[3px] border-gray-800 rounded font-medium px-12 py-2 text-sm bg-gray-800" href="#">Explorar inventario</a>
+          <a
+            class="text-black border-[3px] border-gray-100 rounded font-medium px-12 py-2 text-sm bg-gray-100 mr-3 ml-3"
+            href="#">Pedido personalizado</a
+          >
+        </div>
+        <div slot="underfooter">
+          <a class="pb-4 text-sm flex flex-col flex-grow justify-end" href="#"
+            ><u>Disponible con Moves III</u></a
+          >
+        </div>
+        <img
+          slot="background"
+          alt="Model Y"
+          class="h-full w-screen object-cover object-center bg-image"
+          src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-S-homepage-desktop"
+        />
+      </Section>
+    </div>
 
-                	<a class="text-black border-[3px] border-gray-100 rounded font-medium px-12 py-2 text-sm bg-gray-100" href="#">Pedido personalizado</a>
-            	</div>
-				<img slot="background" alt="Model X" class="h-full w-screen object-cover object-center bg-image"src="https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-X-Desktop-LHD"></img>
-			</Section>
-		</div>
-		<div class="snap-center">
-			<Section title="Solar y Powerwall" subtitle="Energia para todos" color="black">
-				<div slot="footer">
-                	<a class="text-white border-[3px] border-gray-900 rounded font-medium px-20 py-2 text-sm bg-gray-900" href="#">Saber mas</a>
-            	</div>
-				<img slot="background" alt="Model X" class="h-full w-screen object-cover object-center bg-image"src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Desktop_SolarPanels"></img>
-			</Section>
-		</div>
-		<div class="snap-center">
-			<Section title="Accesorios" color="black">
-				<div slot="footer">
-                	<a class="text-black border-[3px] border-gray-100 rounded font-medium px-12 py-2 text-sm bg-gray-100" href="#">Comprar ahora</a>
-            	</div>
-				<img slot="background" alt="Model X" class="h-full w-screen object-cover object-center bg-image"src="
-				https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Accessories-Desktop-EMEA.jpg"></img>
-			</Section>
-		</div>
-	</main>
+    <div class="snap-center">
+      <Section
+        title="Model X"
+        subtitle="Concertar una prueba de conduccion"
+        color="black"
+      >
+        <div slot="footer">
+          <a
+            class="text-white border-[3px] border-gray-800 rounded font-medium px-12 py-2 text-sm bg-gray-800 mr-3 ml-3"
+            href="#">Explorar inventario</a
+          >
+
+          <a
+            class="text-black border-[3px] border-gray-100 rounded font-medium px-12 py-2 text-sm bg-gray-100 mr-3 ml-3"
+            href="#">Pedido personalizado</a
+          >
+        </div>
+        <div slot="underfooter">
+          <a class="pb-4 text-sm flex flex-col flex-grow justify-end" href="#"
+            ><u>Disponible con Moves III</u></a
+          >
+        </div>
+        <img
+          slot="background"
+          alt="Model X"
+          class="h-full w-screen object-cover object-center bg-image"
+          src="https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-X-Desktop-LHD"
+        />
+      </Section>
+    </div>
+
+    <div class="snap-center">
+      <Section
+        title="Solar y Powerwall"
+        subtitle="Energia para todos"
+        color="black"
+      >
+        <div slot="footer">
+          <a
+            class="text-white border-[3px] border-gray-900 rounded font-medium px-20 py-2 text-sm bg-gray-900"
+            href="#">Saber más</a
+          >
+        </div>
+        <div slot="underfooter">
+          <a
+            class="pb-4 text-sm flex flex-col flex-grow justify-end invisible"
+            href="#"
+            >hola
+          </a>
+        </div>
+        <img
+          slot="background"
+          alt="Model X"
+          class="h-full w-screen object-cover object-center bg-image"
+          src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Desktop_SolarPanels"
+        />
+      </Section>
+    </div>
+
+    <div class="snap-center">
+      <Section title="Accesorios" color="black">
+        <div slot="footer">
+          <a
+            class="text-black border-[3px] border-gray-100 rounded font-medium px-12 py-2 text-sm bg-gray-100"
+            href="#">Comprar ahora</a
+          >
+        </div>
+        <div slot="underfooter" class="flex justify-center pb-4">
+          <nav>
+            <ul
+              class="text-sm [&>li>a]:text-white [&>li>a]:inline-block [&>li>a]:py-2 [&>li>a]:px-2 flex"
+            >
+              <li><a href="#">Tesla © 2023</a></li>
+              <li><a href="#">Privacidad y legal</a></li>
+              <li><a href="#">Contacto</a></li>
+              <li><a href="#">Noticias</a></li>
+              <li><a href="#">Seguir informado</a></li>
+              <li><a href="#">Localizacion de tiendas</a></li>
+            </ul>
+          </nav>
+        </div>
+        <img
+          slot="background"
+          alt="Model X"
+          class="h-full w-screen object-cover object-center bg-image"
+          src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Accessories-Desktop-EMEA.jpg"
+        />
+      </Section>
+    </div>
+  </main>
 </Layout>
